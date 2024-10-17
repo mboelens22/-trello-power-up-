@@ -1,0 +1,21 @@
+{
+	"manifest_version": 1,
+	"name": "Two-Way Card Mirror",
+	"description": "Mirrors cards between boards with two-way synchronization.",
+	"author": "Michael Boelens",
+	"capabilities": [
+		"card-badges",
+		"card-buttons",
+		"authorization-status"
+	],
+	"connectors": {
+		"iframe": {
+			"url": "https://mboelens22.github.io/trello-power-up/trello-powerup.html",
+			"actions": {
+				"card-buttons": "cardButtons",
+				"card-badges": "cardBadges",
+				"authorization-status": "authorizationStatus"
+			}
+		}
+	}
+}
